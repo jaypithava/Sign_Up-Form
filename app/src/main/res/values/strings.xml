@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LoginData</string>
+    <string name="invaild_name">Enter Valid Name</string>
+    <string name="invaild_mobile">Enter Valid PhoneNo</string>
+    <string name="invaild_email">Enter Valid Email</string>
+    <string name="invaild_lname">Enter Valid LastName</string>
+    <string name="invaild_age">Enter Valid Age</string>
+    <string name="invaild_radio">Enter Gender</string>
+    <string name="invaild_male">Enter Male Or Female</string>
+    <string name="invaild_cricket">Enter Valid Hobbies</string>
+    <string name="invaild_female">Enter Female</string>
+
+    <!-- <string-array name="arraydata">
+         <item>Android</item>
+         <item>Java</item>
+         <item>Php</item>
+     </string-array>-->
+    
+    
+</resources>

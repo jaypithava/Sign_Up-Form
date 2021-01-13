@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#19FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/actionbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btngradiant"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:titleTextColor="@color/white">
+
+                <ImageButton
+                    android:id="@+id/imageBack"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:srcCompat="@drawable/abc_vector_test" />
+
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="Back"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtReg"
+                    android:layout_width="235dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/btngradiant"
+                    android:gravity="center"
+                    android:text="Your Details:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.438"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.046" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+
+
+            <EditText
+                android:id="@+id/edFirst"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/backgroundeditview"
+                android:drawableStart="@drawable/ic_baseline_account_circle_24"
+                android:ems="10"
+                android:hint="Enter FirstName"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.442"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.201" />
+
+            <EditText
+                android:id="@+id/edLast"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/backgroundeditview"
+                android:drawableStart="@drawable/ic_baseline_account_circle_24"
+                android:ems="10"
+                android:hint="Enter LastName"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.442"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.306" />
+
+            <EditText
+                android:id="@+id/edAge"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backgroundeditview"
+                android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
+                android:ems="10"
+                android:hint="Enter Age"
+                android:imeOptions="actionSend"
+                android:inputType="number|textPersonName"
+                android:maxLength="2"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.442"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.421" />
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/backgroundeditview"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:ems="10"
+                android:hint="Enter Email"
+                android:imeOptions="actionSend"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.442"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.534" />
+
+
+            <EditText
+                android:id="@+id/edPhone"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backgroundeditview"
+                android:drawableStart="@drawable/ic_baseline_local_phone_24"
+                android:ems="10"
+                android:hint="Enter Phone"
+                android:inputType="phone"
+                android:keepScreenOn="false"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.442"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.65">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-65dp"
+                android:gravity="center"
+                android:text="+91"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Hobbies"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btngradiant"
+                android:gravity="center"
+                android:text="Gender"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGrp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="-45dp"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="0dp"
+                    android:checked="false"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radionFemale"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginBottom="-10dp"
+                    android:checked="false"
+                    android:text="FeMale" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/cricket"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="15dp"
+
+                android:text="Cricket"
+
+                />
+            <TextView
+                android:id="@+id/hobbies"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/btngradiant"
+                android:gravity="center"
+                android:text="Hobbies"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <CheckBox
+                android:id="@+id/football"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-50dp"
+
+                android:text="football" />
+
+            <CheckBox
+                android:id="@+id/music"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="180dp"
+
+                android:layout_marginTop="10dp"
+                android:text="Music" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="100dp" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btngradiant"
+                android:text="Previous"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.459"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.815" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
